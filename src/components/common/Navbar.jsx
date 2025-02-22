@@ -8,9 +8,9 @@ import AuthBtn from "../ui/AuthBtn";
 const Navbar = () => {
   return (
     <div
-      className={`flex w-full px-8 pt-4 z-50 items-center justify-center transition-all duration-500`}
+      className={`fixed backdrop-blur-3xl h-18 py-4 shadow-2xl flex w-full pt-4 z-50 items-center justify-center transition-all duration-500`}
     >
-      <div className="flex w-full h-16 bg-white mx-auto rounded-2xl px-5 items-center justify-between">
+      <div className=" flex w-full  mx-auto rounded-2xl px-5 items-center justify-between">
         {/* First Div */}
         <Link to={"/"}>
           <div className="text-2xl font-bold">TAHWIL</div>
@@ -27,23 +27,17 @@ const Navbar = () => {
           </nav>
         </div>
 
-
         {/* Theerd Div */}
-        {/* <ButtonYellow name="LogIn" /> */}
         <div className="flex gap-x-4 items-center justify-center">
-          {/* Dark mode toggle visible on larger screens */}
-         <div>
-          <AuthBtn 
-          props={"Register"}
-          />
-         </div>
+          <div>
+            <AuthBtn props={"Register"} />
+          </div>
 
           {/* Mobile navigation with dark mode toggle */}
-          <nav className="inline-block lg:hidden">
-            <Mobile  />
+          <nav className="inline-block lg:hidden ">
+            <Mobile />
           </nav>
         </div>
-
       </div>
     </div>
   );

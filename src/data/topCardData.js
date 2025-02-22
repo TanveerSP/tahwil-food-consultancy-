@@ -6,6 +6,7 @@ const topCardData = [
   {
     img: foodImg1,
     title: "Food Safety ",
+    path: "",
   },
   {
     img: foodImg2,

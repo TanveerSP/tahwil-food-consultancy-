@@ -10,11 +10,11 @@ import SwiperCard from "../components/home/SwiperCard";
 
 const Home = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full mt-18 relative">
       <Hero />
 
+      {/* What We Do Section */}
       <div className="py-10 border-b-[1px] border-gray-300">
-        {/* What We Do Section */}
         <div className="w-full px-6 md:px-10 lg:px-14 mx-auto flex lg:flex-row flex-col gap-y-20 items-start justify-between py-10">
           {/* Left - Small Heading */}
           <div className="space-y-1">
@@ -33,6 +33,40 @@ const Home = () => {
           </p>
         </div>
         <AnimatedCards />
+      </div>
+
+      {/* Courses Categories */}
+      <div className="bg-titan-white-300 border-b-[1px] border-gray-300">
+        <div className="w-full py-15 h-auto px-6 md:px-10 lg:px-14  flex flex-col lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16 ">
+          {/* heading */}
+          <div className="max-w-4xl py-5 flex flex-col gap-6">
+            {/* Title */}
+            <div className="space-y-1">
+              <h3 className="text-sm sm:text-lg tracking-wide font-semibold text-gray-500">
+                COURSES CATEGORIES
+              </h3>
+              <div className="w-12 h-1 rounded-full bg-titan-white-700"></div>
+            </div>
+
+            <div className="flex flex-col gap-y-3">
+              <div>
+                <ButtonDefault />
+              </div>
+            </div>
+          </div>
+
+          <div className="py-5">
+            <p className="text-xl  text-black font-medium max-w-3xl leading-relaxed">
+              Explore Our Course Categories Swipe through our diverse course
+              categories and find the perfect learning path for you. From tech
+              to business, enhance your skills with expert-led training. 🚀🎓
+            </p>
+          </div>
+        </div>
+        {/* Swiper Card Content */}
+        <div className="w-11/12 mx-auto py-5 ">
+          <SwiperCard />
+        </div>
       </div>
 
       {/* About Us Section */}
@@ -80,37 +114,6 @@ const Home = () => {
       {/* Marquee Animation Line */}
       <div>
         <Marquee />
-      </div>
-
-      {/* Courses Categories */}
-      <div className="w-full py-15 h-auto px-6 md:px-10 lg:px-14  flex flex-col lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16 ">
-        {/* heading */}
-        <div className="max-w-4xl py-5 flex flex-col gap-6">
-          {/* Title */}
-          <div className="space-y-1">
-            <h3 className="text-sm sm:text-lg tracking-wide font-semibold text-gray-500">
-              COURSES CATEGORIES
-            </h3>
-            <div className="w-12 h-1 rounded-full bg-titan-white-700"></div>
-          </div>
-
-          <div className="flex flex-col gap-y-3">
-            <div>
-              <ButtonDefault />
-            </div>
-          </div>
-        </div>
-
-        <div className="py-5">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            tempora?
-          </p>
-        </div>
-      </div>
-      {/* Swiper Card Content */}
-      <div className="w-11/12 mx-auto py-5 ">
-        <SwiperCard />
       </div>
     </div>
   );
