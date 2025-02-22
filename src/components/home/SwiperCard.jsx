@@ -15,7 +15,7 @@ const SwiperCard = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         spaceBetween={10} // Adjusted space between slides
         breakpoints={{
-          320: { slidesPerView: 1.2, spaceBetween: 10 }, // Small screens
+          320: { slidesPerView: 1, spaceBetween: 10 }, // Small screens
           480: { slidesPerView: 2, spaceBetween: 10 },
           768: { slidesPerView: 3, spaceBetween: 15 },
           1024: { slidesPerView: 4, spaceBetween: 20 }, // Large screens
