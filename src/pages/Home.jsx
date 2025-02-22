@@ -106,11 +106,10 @@ const Home = () => {
         </div>
 
         {/* Swiper Card Content */}
-        <div className="max-w-3xl  py-5 ">
-          <SwiperCard />
-        </div>
       </div>
-
+      <div className="w-11/12 mx-auto py-5 ">
+        <SwiperCard />
+      </div>
     </div>
   );
 };
