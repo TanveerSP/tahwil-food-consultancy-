@@ -26,10 +26,10 @@ const Home = () => {
 
           {/* Right - Description */}
           <p className="text-xl  text-black font-medium max-w-3xl leading-relaxed">
-            We leverage biotechnology to deliver sustainable and healthy beef
-            alternative for pet food manufacturers. By using insect-based
-            protein we enhance animal health, reduce environmental impact, and
-            provide scalable solutions for a growing industry.
+            Ensure food safety and compliance with expert guidance. We provide
+            training, certifications, and consultancy to help businesses meet
+            industry standards, prevent risks, and maintain quality. Protect
+            your customers and brand with our trusted food safety solutions.{" "}
           </p>
         </div>
         <AnimatedCards />
@@ -95,18 +95,20 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col gap-y-3">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              tempora?
-            </p>
             <div>
               <ButtonDefault />
             </div>
           </div>
         </div>
 
-        {/* Swiper Card Content */}
+        <div className="py-5">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            tempora?
+          </p>
+        </div>
       </div>
+      {/* Swiper Card Content */}
       <div className="w-11/12 mx-auto py-5 ">
         <SwiperCard />
       </div>

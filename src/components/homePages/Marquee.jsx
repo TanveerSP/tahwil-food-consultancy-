@@ -21,8 +21,8 @@ const Marquee = () => {
           <div key={i} className="flex items-center py-10 gap-x-5 animate-[marquee_30s_linear_infinite]">
             {items.map((text, index) => (
               <div key={index} className="inline-flex items-center gap-x-4  justify-center">
-                <h1 className="text-[4vw] font-bold text-titan-white-50 px-1">{text}</h1>
-                <div className="h-[3vw] w-[3vw] bg-titan-white-50 rounded-full mx-[2vw] mt-1  "></div>
+                <h1 className="lg:text-[4vw] md:text-[4vw] text-3xl font-bold text-titan-white-50 px-1">{text}</h1>
+                <div className="lg:h-[3vw] lg:w-[3vw] md:h-[3vw] md:w-[3vw] h-6 w-6 bg-titan-white-50 rounded-full mx-[2vw] mt-1  "></div>
               </div>
             ))}
           </div>
