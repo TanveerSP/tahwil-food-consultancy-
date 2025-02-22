@@ -42,10 +42,10 @@ const Home = () => {
           <div className="max-w-4xl py-5 flex flex-col gap-6">
             {/* Title */}
             <div className="space-y-1">
-              <h3 className="text-sm sm:text-lg tracking-wide font-semibold text-gray-500">
+              <h3 className="text-lg tracking-wide font-semibold text-gray-500">
                 COURSES CATEGORIES
               </h3>
-              <div className="w-12 h-1 rounded-full bg-titan-white-700"></div>
+              <div className="w-18 rounded-full h-1 bg-titan-white-700"></div>
             </div>
 
             <div className="flex flex-col gap-y-3">
@@ -87,10 +87,10 @@ const Home = () => {
         <div className="max-w-4xl py-5 flex flex-col gap-6">
           {/* Title */}
           <div className="space-y-1">
-            <h3 className="text-sm sm:text-lg tracking-wide font-semibold text-gray-500">
+            <h3 className="text-lg tracking-wide font-semibold text-gray-500">
               ABOUT US
             </h3>
-            <div className="w-12 h-1 rounded-full bg-titan-white-700"></div>
+            <div className="w-18 rounded-full h-1 bg-titan-white-700"></div>
           </div>
 
           {/* Description */}
