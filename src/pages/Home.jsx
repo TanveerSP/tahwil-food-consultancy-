@@ -3,7 +3,7 @@ import Hero from "../components/home/Hero";
 import AboutImg from "../assets/AboutImg.jpg";
 import AboutImg2 from "../assets/boy.jpg";
 import ButtonDefault from "../components/ui/ButtonDefault";
-import Marquee from "../components/homePages/Marquee";
+import Marquee from "../components/home/Marquee";
 import AnimatedCards from "../components/home/AnimatedCards";
 import Card from "../components/ui/Card";
 import SwiperCard from "../components/home/SwiperCard";
