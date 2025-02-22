@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #18181b;
+  /* purple color */
+
+  --color-mirage-950: #1f1f2b;
+  --color-titan-white-50: #eff1fe;
+  --color-titan-white-100: #e4e6fd;
+  --color-titan-white-200: #cbcdfa;
+  --color-titan-white-300: #abadf6;
+  --color-titan-white-400: #8e89f0;
+  --color-titan-white-500: #7d6de7;
+  --color-titan-white-600: #6d51da;
+  --color-titan-white-700: #5e42c0;
+  --color-titan-white-800: #4c389b;
+  --color-titan-white-900: #40347b;
+  --color-titan-white-950: #271e48;
+
+  --color-chetwode-blue-50: #eff2fe;
+  --color-chetwode-blue-100: #e1e7fe;
+  --color-chetwode-blue-200: #c9d2fc;
+  --color-chetwode-blue-300: #a8b4f9;
+  --color-chetwode-blue-400: #858df4;
+  --color-chetwode-blue-500: #6868ec;
+  --color-chetwode-blue-600: #574be0;
+  --color-chetwode-blue-700: #4a3dc5;
+  --color-chetwode-blue-800: #3c349f;
+  --color-chetwode-blue-900: #36317e;
+  --color-chetwode-blue-950: #201d49;
+}
+
+/* 
+Hero Section: #2A3300 (950) Background + #C4D600 (500) Button
+Navbar: #5F6C08 (800) Background + #FFFEC5 (100) Text
+Primary Button: #C4D600 (500) + #A0B500 (600) Hover
+Headings: #798902 (700)
+Text: #505B0C (900)
+Footer: #2A3300 (950)
+*/
+
+/* Fix unwanted horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind custom scrollbar removal */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keyframe animation for smooth marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Card animmation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradientMove {
+  animation: gradientMove 6s ease-in-out infinite;
+}
