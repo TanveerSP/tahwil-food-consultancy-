@@ -3,8 +3,18 @@
 @theme {
   --color-black: #18181b;
   /* purple color */
-
+  --color-mirage-50: #f6f6f9;
+  --color-mirage-100: #ececf2;
+  --color-mirage-200: #d5d6e2;
+  --color-mirage-300: #b0b2c9;
+  --color-mirage-400: #8588ab;
+  --color-mirage-500: #656992;
+  --color-mirage-600: #515478;
+  --color-mirage-700: #424462;
+  --color-mirage-800: #393a53;
+  --color-mirage-900: #333447;
   --color-mirage-950: #1f1f2b;
+
   --color-titan-white-50: #eff1fe;
   --color-titan-white-100: #e4e6fd;
   --color-titan-white-200: #cbcdfa;

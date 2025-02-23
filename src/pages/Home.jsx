@@ -7,6 +7,7 @@ import Marquee from "../components/home/Marquee";
 import AnimatedCards from "../components/home/AnimatedCards";
 import Card from "../components/ui/Card";
 import SwiperCard from "../components/home/SwiperCard";
+import Footer from "../components/common/Footer";
 
 const Home = () => {
   return (
@@ -36,7 +37,7 @@ const Home = () => {
       </div>
 
       {/* Courses Categories */}
-      <div className="bg-titan-white-300 border-b-[1px] border-gray-300">
+      <div className=" bg-titan-white-300 border-b-[1px] border-gray-300">
         <div className="w-full py-15 h-auto px-6 md:px-10 lg:px-14  flex flex-col lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16 ">
           {/* heading */}
           <div className="max-w-4xl py-5 flex flex-col gap-6">
@@ -114,6 +115,11 @@ const Home = () => {
       {/* Marquee Animation Line */}
       <div>
         <Marquee />
+      </div>
+
+      {/* Footer */}
+      <div>
+        <Footer />
       </div>
     </div>
   );

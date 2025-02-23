@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className=" flex w-full  mx-auto rounded-2xl px-5 items-center justify-between">
         {/* First Div */}
         <Link to={"/"}>
-          <div className="text-2xl font-bold">TAHWIL</div>
+          <div className="text-2xl text-chetwode-blue-700 font-bold">TAHWIL</div>
         </Link>
 
         {/* Second Div */}

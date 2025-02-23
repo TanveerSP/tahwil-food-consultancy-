@@ -43,6 +43,7 @@ const Mobile = () => {
             {navLinksData.map((ele, ind) => (
               <li key={ind} className="w-full">
                 <Link
+                onClick={() => setIsOpen(false)}
                   to={ele.path}
                   className="block w-full p-3 border-[1px] border-bluemine-200 hover:bg-bluemine-300 transition-all duration-300 rounded-md text-start"
                 >
