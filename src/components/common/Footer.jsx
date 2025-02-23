@@ -38,7 +38,7 @@ const Footer = () => {
                   </h3>
                 </div>
 
-                <div className="py-0 lg:w-auto h-[20vh] md:w-[30vw] w-[50vw] space-y-4 ">
+                <div className="py-0 lg:w-auto lg:h-[20vh] md:w-[30vw] w-[50vw] space-y-4 ">
                   {section.links.map((link, ind) => (
                     <div
                       key={ind}
