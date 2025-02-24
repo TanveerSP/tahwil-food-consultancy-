@@ -1,14 +1,15 @@
 import React from "react";
 import { BsArrowRightSquareFill } from "react-icons/bs";
-import { BsArrowLeftSquareFill } from "react-icons/bs";
 
-const ButtonDefault = () => {
+const ButtonDefault = ({ text = "Click Me", onClick }) => {
   return (
-    <button className="bg-black text-white text-lg font-medium flex items-center  p-2 gap-2 rounded-lg">
-      Discover Our Solution
-      <BsArrowRightSquareFill 
-      size={35}
-      />
+    <button 
+      onClick={onClick}
+      className="flex items-center gap-x-3 px-4 py-2 bg-black text-white text-lg font-medium uppercase rounded-lg 
+                 transition-all duration-200 transform hover:scale-95 hover:bg-mirage-900"
+    >
+      {text}
+      <BsArrowRightSquareFill size={30} />
     </button>
   );
 };

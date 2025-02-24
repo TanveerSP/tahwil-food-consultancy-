@@ -34,8 +34,7 @@ const AnimatedCards = () => {
         >
           {/* Gradient Background */}
           <div
-            className="absolute inset-0 bg-gradient-to-br from-[#cbcdfa] via-[#8e89f0] to-[#58479c] 
-          bg-[length:400%_400%] animate-gradientMove"
+            className="absolute inset-0 bg-titan-white-200 "
           ></div>
           {/* Content */}
           <div className="relative p-6 flex flex-col justify-center gap-y-6 text-white transform transition-all duration-500 group-hover:translate-y-[-10px] group-hover:scale-105">
@@ -47,7 +46,7 @@ const AnimatedCards = () => {
             </div>
 
             {/* Text Section */}
-            <div className="opacity-80 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <div className="opacity-90 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               <p className="text-lg font-medium text-gray-900">
                 {card.titleTwo}
               </p>

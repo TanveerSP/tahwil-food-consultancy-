@@ -13,7 +13,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="w-full flex  bg-mirage-950 relative overflow-hidden">
+    <div className="w-full flex  bg-mirage-900 relative overflow-hidden">
       {/* Marquee Wrapper */}
       <div className="flex whitespace-nowrap overflow-hidden">
         {/* Duplicate to make it seamless */}

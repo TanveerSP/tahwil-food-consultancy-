@@ -6,7 +6,7 @@ import ButtonDefault from "../ui/ButtonDefault";
 const Hero = () => {
   const { scrollY } = useScroll();
   const yPosition = useTransform(scrollY, [0, 500], [0, -100]); // Smoother, slower parallax
-  
+
   return (
     <div className="w-full pt-20 px-6 md:px-10 lg:px-14 border-b-[1px] border-gray-300 flex flex-col justify-between ">
       {/* Top - Heading */}
@@ -26,7 +26,7 @@ const Hero = () => {
 
         {/* Bottom - Button & Paragraph */}
         <div className="flex lg:flex-row flex-col-reverse items-start lg:items-center gap-8 justify-between">
-          <ButtonDefault />
+          <ButtonDefault text={"Get Start"} />
           <p className="text-gray-500 text-lg mt-4 max-w-md">
             Our expert food consultancy ensures compliance, safety, and
             efficiency in food production, helping businesses meet industry
@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="mt-10 rounded-2xl relative overflow-hidden">
         {/* Parallax Image with Overlay */}
         <motion.div
-          className="w-full rounded-2xl min-h-[80vh] md:min-h-[70vh] bg-center bg-cover flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 relative"
+          className="w-full rounded-2xl min-h-[40vh] md:min-h-[60vh] bg-center bg-cover flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 relative"
           style={{
             backgroundImage: `url(${Img})`,
             backgroundSize: "cover",

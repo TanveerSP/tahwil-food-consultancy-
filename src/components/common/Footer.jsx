@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-mirage-950 text-white px-4 sm:px-6 md:px-8 lg:px-14 py-10">
+    <div className="w-full bg-mirage-950  px-4 sm:px-6 md:px-8 lg:px-14 space-y-10 py-20">
       {/* Wrapper for content and links */}
       <div className="flex flex-col gap-y-15 lg:flex-row lg:justify-between">
         {/* Footer Description */}
@@ -17,7 +17,7 @@ const Footer = () => {
             <h1 className="text-2xl text-titan-white-200 font-bold">TAHWIL</h1>
           </div>
 
-          <p className="text-lg font-medium max-w-3xl leading-relaxed">
+          <p className="text-lg text-mirage-200 font-medium max-w-3xl leading-relaxed">
             Stay connected with us for the latest updates, insights, and
             solutions. Explore our services, learn more about our company, and
             reach out anytime.
@@ -38,7 +38,7 @@ const Footer = () => {
                   </h3>
                 </div>
 
-                <div className="py-0 lg:w-auto lg:h-[20vh] md:w-[30vw] w-[50vw] space-y-4 ">
+                <div className=" lg:w-auto lg:h-[20vh] md:w-[30vw] w-[50vw] space-y-4 ">
                   {section.links.map((link, ind) => (
                     <div
                       key={ind}
