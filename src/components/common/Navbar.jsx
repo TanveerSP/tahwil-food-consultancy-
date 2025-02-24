@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       {/* Navbar */}
-      <div className="backdrop-blur-sm h-18 py-4 shadow-2xl flex w-full pt-4 items-center justify-center transition-all duration-500">
+      <div className="bg-chetwode-blue-100 h-18 py-4 shadow-2xl flex w-full pt-4 items-center justify-center transition-all duration-500">
         <div className="flex w-full mx-auto rounded-2xl px-5 items-center justify-between">
           {/* First Div */}
           <Link to={"/"}>
