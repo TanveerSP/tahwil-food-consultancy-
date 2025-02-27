@@ -12,8 +12,8 @@
   --color-mirage-600: #515478;
   --color-mirage-700: #424462;
   --color-mirage-800: #393a53;
-  --color-mirage-900: #1F1F2B;
-  --color-mirage-950: #17171C;
+  --color-mirage-900: #1f1f2b;
+  --color-mirage-950: #17171c;
 
   --color-titan-white-50: #eff1fe;
   --color-titan-white-100: #e4e6fd;
@@ -39,15 +39,6 @@
   --color-chetwode-blue-900: #36317e;
   --color-chetwode-blue-950: #201d49;
 }
-
-/* 
-Hero Section: #2A3300 (950) Background + #C4D600 (500) Button
-Navbar: #5F6C08 (800) Background + #FFFEC5 (100) Text
-Primary Button: #C4D600 (500) + #A0B500 (600) Hover
-Headings: #798902 (700)
-Text: #505B0C (900)
-Footer: #2A3300 (950)
-*/
 
 /* Fix unwanted horizontal scrolling */
 html,
@@ -124,4 +115,42 @@ html {
 
 .border-animate:hover::before {
   transform: translateX(100%);
+}
+
+/* ================================================= */
+/*  Ruseable css */
+/* ================================================= */
+/* Comman use css container border */
+.container-border {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b0b2c9;
+}
+
+/* Container-layout css */
+.container-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 24px; /* Default: px-6 */
+  padding-bottom: 20px; /* pb-20 */
+  height: auto;
+  gap: 10px; /* gap-10 */
+
+  /* Medium screens (md) */
+  @media (min-width: 768px) {
+    padding-left: 40px; /* md:px-10 */
+    padding-right: 40px;
+  }
+
+  /* Large screens (lg) */
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 56px; /* lg:px-14 */
+    padding-right: 56px;
+    gap: 16px; /* lg:gap-16 */
+  }
 }
