@@ -18,8 +18,8 @@ const Home = () => {
       {/* ====================================================== */}
       {/* Courses Categories */}
       {/* ====================================================== */}
-      <div className=" container-border">
-        <div className="w-full py-15 h-auto px-6 md:px-10 lg:px-14  flex flex-col lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16 ">
+      <div className=" container-border group">
+        <div className="w-full py-15 h-auto px-6 md:px-10 lg:px-14  flex flex-col lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16">
           {/* heading */}
           <div className="max-w-4xl py-5 flex flex-col gap-6">
             {/* Title */}
@@ -86,9 +86,9 @@ const Home = () => {
       {/* About Us Section */}
       {/* ====================================================== */}
       <div className="container-border py-10">
-        <div className="w-full group pb-20 h-auto px-6 md:px-10 lg:px-14 py-10 flex flex-col-reverse lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16 ">
+        <div className="w-full group pb-20 h-auto px-6 md:px-10 lg:px-14 py-10 flex flex-col-reverse lg:flex-row items-start lg:items-start justify-between gap-10 lg:gap-16 group">
           {/* left - Text Section */}
-          <div className="max-w-4xl py-5 flex flex-col gap-6">
+          <div className="max-w-4xl py-5 flex flex-col gap-6 ">
             {/* Title */}
             <div>
               <Heading text={"About Us"} />
