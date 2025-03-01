@@ -5,6 +5,8 @@ import Navbar from "./components/common/Navbar";
 import Error from "./pages/Error";
 import About from "./pages/About";
 import Loader from "./components/common/Loader";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const Home = lazy(() => import("./pages/Home"));
 
@@ -15,7 +17,7 @@ function App() {
     // Set a delay before rendering the page (e.g., 3 seconds)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer); // Cleanup function
   }, []);
@@ -30,6 +32,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/sign-up" element={<Signup/>} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>

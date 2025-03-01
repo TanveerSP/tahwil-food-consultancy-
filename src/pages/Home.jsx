@@ -7,7 +7,7 @@ import Marquee from "../components/home/Marquee";
 import AnimatedCards from "../components/home/AnimatedCards";
 import SwiperCard from "../components/home/SwiperCard";
 import Footer from "../components/common/Footer";
-import ContactUs from "../components/common/ContactUs";
+import ContactUs from "../components/home/ContactUs";
 import Heading from "../components/ui/Heading";
 
 const Home = () => {
