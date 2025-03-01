@@ -5,6 +5,7 @@ import NavItem from "./NavItem";
 import navLinksData from "../../data/navLinksData";
 import AuthBtn from "../ui/AuthBtn";
 import { motion, useScroll } from "framer-motion";
+import LogInBtn from "../ui/LogInBtn";
 
 const Navbar = () => {
   const { scrollYProgress } = useScroll(); // Track scroll progress
@@ -16,7 +17,9 @@ const Navbar = () => {
         <div className="flex w-full mx-auto rounded-2xl px-5 items-center justify-between">
           {/* First Div */}
           <Link to={"/"}>
-            <div className="text-2xl text-chetwode-blue-700 font-bold">TAHWIL</div>
+            <div className="text-2xl text-chetwode-blue-700 font-bold">
+              TAHWIL
+            </div>
           </Link>
 
           {/* Second Div */}
@@ -32,8 +35,16 @@ const Navbar = () => {
 
           {/* Third Div */}
           <div className="flex gap-x-4 items-center justify-center">
-            <div>
-              <AuthBtn props={"Register"} />
+            {/* Auth Btn */}
+            <div className="flex items-center gap-x-5 justify-between">
+              <Link to={"/login"}>
+                 <LogInBtn 
+                 text={"LogIn"}
+                 />
+              </Link>
+              <Link to={"/sign-up"}>
+                <AuthBtn text={"Start for free"} />
+              </Link>
             </div>
 
             {/* Mobile navigation */}

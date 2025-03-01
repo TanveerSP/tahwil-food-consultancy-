@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import { FaAngleRight } from "react-icons/fa6";
 
-const AuthBtn = ({props}) => {
+const AuthBtn = ({ text = "Click Me", onclick }) => {
   return (
     <button
-    className='py-2 px-4 text-lg rounded-3xl bg-chetwode-blue-600 hover:bg-chetwode-blue-700 text-titan-white-50 shadow-lg shadow-chetwode-blue-500'
+      onClick={onclick}
+      className="py-2 px-4 text-md border-[1px] border-chetwode-blue-600 shadow-lg shadow-chetwode-blue-300 font-semibold rounded-xl text-titan-white-50 bg-chetwode-blue-600 flex items-center gap-x-2 transition-shadow duration-300 ease-in-out hover:shadow-none"
     >
-        {props}
+      <span>{text}</span>
+      <FaAngleRight />
     </button>
-  )
-}
+  );
+};
 
-export default AuthBtn
+export default AuthBtn;
