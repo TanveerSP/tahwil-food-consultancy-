@@ -32,12 +32,13 @@ const Mobile = () => {
 
       {isOpen && (
         <div
-          className="fixed mt-18 inset-0 bg-black/30 w-full h-full z-40"
+          className="fixed mt-18 inset-0 bg-black/20 w-full h-full z-40"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
 
       <div
+        onClick={() => setIsOpen(false)}
         className={`absolute top-18 right-0 h-screen  ${
           isOpen ? "md:w-[60vw] w-[100vw]" : "w-[-0vh] overflow-hidden"
         } bg-chetwode-blue-300 transition-all duration-200 ease-in-out z-50 ${
