@@ -4,11 +4,11 @@ import Mobile from "./Mobile";
 import NavItem from "./NavItem";
 import navLinksData from "../../data/navLinksData";
 import AuthBtn from "../ui/AuthBtn";
-import { motion, useScroll } from "framer-motion";
+// import { motion, useScroll } from "framer-motion";
 import LogInBtn from "../ui/LogInBtn";
 
 const Navbar = () => {
-  const { scrollYProgress } = useScroll(); // Track scroll progress
+  // const { scrollYProgress } = useScroll(); // Track scroll progress
 
   return (
     <div className="fixed top-0 left-0 w-full z-50">
@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Third Div */}
           <div className="flex gap-x-4 items-center justify-center">
             {/* Auth Btn */}
-            <div className="flex items-center gap-x-5 justify-between">
+            <div className=" lg:flex items-center gap-x-5 justify-between hidden">
               <Link to={"/login"}>
                  <LogInBtn 
                  text={"LogIn"}
@@ -56,10 +56,10 @@ const Navbar = () => {
       </div>
 
       {/* Scroll Progress Bar (Under Navbar) */}
-      <motion.div
+      {/* <motion.div
         className="h-1 bg-chetwode-blue-600 origin-left"
         style={{ scaleX: scrollYProgress }}
-      />
+      /> */}
     </div>
   );
 };

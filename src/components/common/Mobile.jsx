@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import NavItem from "./NavItem";
 import navLinksData from "../../data/navLinksData";
 import { Link } from "react-router-dom";
+import AuthBtn from "../ui/AuthBtn";
+import LogInBtn from "../ui/LogInBtn";
 
 const Mobile = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -29,29 +30,46 @@ const Mobile = () => {
         ></div>
       </div>
 
+      {isOpen && (
+        <div
+          className="fixed mt-18 inset-0 bg-black/30 w-full h-full z-40"
+          onClick={() => setIsOpen(false)}
+        ></div>
+      )}
+
       <div
         className={`absolute top-18 right-0 h-screen  ${
           isOpen ? "md:w-[60vw] w-[100vw]" : "w-[-0vh] overflow-hidden"
-        } bg-titan-white-300 transition-all duration-200 ease-in-out z-50 ${
+        } bg-chetwode-blue-300 transition-all duration-200 ease-in-out z-50 ${
           isOpen
             ? "shadow-[inset_0_-5px_5px_rgba(0,0,0,0.1),-15px_0_25px_rgba(0,0,0,0.15)]"
             : ""
         }  shadow-2xl`}
       >
-        <div className="w-full p-4">
-          <ul className="w-full rounded-lg space-y-1">
-            {navLinksData.map((ele, ind) => (
-              <li key={ind} className="w-full">
-                <Link
-                onClick={() => setIsOpen(false)}
-                  to={ele.path}
-                  className="block w-full p-3 border-[1px] border-bluemine-200 hover:bg-bluemine-300 transition-all duration-300 rounded-md text-start"
-                >
-                  {ele.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="w-full p-4 space-y-5 items-center justify-between">
+          <div className="flex justify-between  ">
+            <Link to={"/login"}>
+              <LogInBtn text={"LogIn"} />
+            </Link>
+            <Link to={"/sign-up"}>
+              <AuthBtn text={"Start for free"} />
+            </Link>
+          </div>
+
+          <div>
+            <ul className="w-full space-y-1">
+              {navLinksData.map((ele, ind) => (
+                <li key={ind} className="w-full">
+                  <Link
+                    to={ele.path}
+                    className="block w-full p-3 border-[1px] border-chetwode-blue-400 hover:bg-chetwode-blue-400 transition-all duration-300 text-start"
+                  >
+                    {ele.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </>
@@ -59,9 +77,3 @@ const Mobile = () => {
 };
 
 export default Mobile;
-
-{
-  /* <div>
-    <DarkModeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
-</div>   */
-}
