@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavItem = ({ path, name }) => {
   return (
-    <li className="font-medium text-center">
+    <li className="text-lg text-center">
       <NavLink
         to={path}
         className={({ isActive }) =>

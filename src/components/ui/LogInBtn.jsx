@@ -3,7 +3,7 @@ import React from "react";
 const LogInBtn = ({ text = "Click Me", onclick }) => {
   return (
     <button onClick={onclick}
-    className="py-2 px-4 text-md border-[1px] font-medium rounded-lg text-mirage-900 border-mirage-900 hover:bg-chetwode-blue-600 hover:text-titan-white-50 hover:border-none transition-all ease-in-out duration-300"
+    className="py-[12px] px-4 font-medium text-md border-[1px] rounded-lg text-mirage-900 border-mirage-900 "
     >
       <span>{text}</span>
     </button>

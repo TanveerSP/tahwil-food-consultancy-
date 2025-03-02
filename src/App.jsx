@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Loader from "./components/common/Loader";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Contact from "./pages/Contact";
 
 const Home = lazy(() => import("./pages/Home"));
 
@@ -32,8 +33,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/sign-up" element={<Signup/>} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/sign-up" element={<Signup />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>
